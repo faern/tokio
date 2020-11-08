@@ -238,6 +238,9 @@ cfg_io_std! {
 }
 
 cfg_io_util! {
+    mod join;
+    pub use join::{join, Join};
+
     mod split;
     pub use split::{split, ReadHalf, WriteHalf};
 
